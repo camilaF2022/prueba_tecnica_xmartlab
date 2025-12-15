@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!^y&-1t!^pwmk#=6va^*cs279mvk&ou(yv1fnn@f@nmjvtk099
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".onrender.com"]
 
 
 # Application definition
@@ -103,6 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    ".onrender.com"
 ]
 
 
