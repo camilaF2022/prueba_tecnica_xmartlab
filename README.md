@@ -68,31 +68,37 @@ python manage.py runserver
 El backend quedará disponible en:
 http://127.0.0.1:8000
 
-### Configuración CORS (desarrollo)
-
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-]
 
 ## Frontend (React + Vite)
 
 ### Instalar dependencias
 
+```
 cd frontend
-
 npm install
+```
 
 ### Variables de entorno
 
 Crear el archivo frontend/.env con el siguiente contenido:
-
+```
 VITE_API_URL=http://127.0.0.1:8000/task_manager
+```
 
 ### Ejecutar aplicación
+
 ```
 npm run dev
 ```
 El frontend quedará disponible en:
 http://localhost:5173
 
+### Producción
 
+El backend está desplegado en Render, en la siguiente URL:
+https://prueba-tecnica-xmartlab.onrender.com/
+
+El frontend está desplegado en Vercel, en la siguiente URL:
+https://prueba-tecnica-xmartlab.vercel.app/
+
+Al ingresar al sitio en Vercel, es posible que la aplicación no responda inmediatamente, ya que Render suspende el proceso después de un tiempo de inactividad. En ese caso, será necesario esperar aproximadamente un minuto para que el backend esté operativo nuevamente.
