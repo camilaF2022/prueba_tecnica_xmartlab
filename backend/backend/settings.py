@@ -103,7 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    ".onrender.com"
+    "https://prueba-tecnica-xmartlab.vercel.app"
 ]
 
 
